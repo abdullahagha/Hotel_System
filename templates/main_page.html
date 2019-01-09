@@ -1,0 +1,80 @@
+{% extends "Base.html" %}
+<style>
+
+
+    body {
+background-image: url("water.jpg");
+  }</style>
+
+{% block content %}
+
+<section class="search-banner text-white py-3 form-arka-plan" id="search-banner">
+    <div class="container py-5 my-5">
+        <div class="row text-center pb-4">
+            <div class="col-md-12">
+                <h2 class="text-white siyah-cerceve">Find Your Hotel </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card acik-renk-form">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group ">
+                                    <label >Which City</label>
+                                    <select id="iller" class="form-control" >
+
+                                        <option selected>Select</option>
+                                        <option>İstanbul</option>
+                                        <option>Ankara</option>
+                                    </select>
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label >Enter Date</label>
+                                        <input type="date" name="bday" max="3000-12-31"
+                                                     min="1000-01-01" class="form-control">
+                                    </div>
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label >Exit Date</label>
+                                        <input type="date" name="bday" max="3000-12-31"
+                                                     min="1000-01-01" class="form-control">
+                                    </div>
+                            </div>
+                             <div class="col-md-4">
+                                <div class="form-group ">
+                                   <label >Number Of Rooms</label>
+                                    <select id="txtroomnum" class="form-control" >
+                                        <option selected>Select</option>
+                                        <option>1 room , 1 person</option>
+                                        <option>1 room , 2 person</option>
+                                        <option>More</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="font-weight-light text-dark">Or</p>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group ">
+                                    <input type="text" class="form-control" placeholder="enter a hotel name">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-warning  pl-5 pr-5">Find</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
