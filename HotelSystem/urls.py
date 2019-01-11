@@ -18,11 +18,15 @@ from django.urls import path , include
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('hotels.urls')),
     path('accounts/', include('accounts.urls')),
+
+
+
 
 ]
 

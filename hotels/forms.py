@@ -20,3 +20,7 @@ class HotelForm(forms.ModelForm):
     class Meta:
         model = hotel
         fields = ('Name', 'City', 'Star', 'Location', 'PhoneNum')
+'''
+class SelectionForm(forms.Forms):
+    hotelChoices = forms.MultipleChoiceField(widget=forms.SelectMultiple(attrs={'class': 'recipes-user-products'}),
+                                             choices=OPTIONS, label='')'''
